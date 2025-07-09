@@ -1,47 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Charity Water Landing Page</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charity:Water | One Drop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <!-- Hero Section: This is the main banner at the top of the page -->
-    <section class="hero">
-        <!-- Main headline -->
-        <h1>Clean Water for Everyone</h1>
-        <!-- Subheadline -->
-        <p>Join us in bringing safe, clean water to communities in need.</p>
-    </section>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Change Starts with One Drop—Yours.</h1>
+      <p>Help support sustainable clean water projects in 29 countries—and turn everyday passion into lasting global impact.</p>
+      <a href="#join" class="cta-button">Join the Movement</a>
+    </div>
+  </header>
 
-    <!-- Story Section: This tells the story of the nonprofit -->
-    <section class="story">
-        <h2>Our Story</h2>
-        <p>
-         
-    </section>
+  <section class="impact">
+    <div class="container">
+      <!-- This image is loaded from the img folder and its width is set to 300px so it doesn't push the text too far -->
+      <img src="img/charity_image.jpg" alt="Community with clean water" style="width:300px;" />
+      <div class="text">
+        <h2>You Have the Power to Spark a Global Ripple</h2>
+        <p>At charity: water, we turn your passion into clean water for those who need it most. Join a movement that has already served 29 countries and raised $925 million to help make clean water a right, not a privilege.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Real-World Impact Story Section -->
-    <section class="impact-story">
-        <!-- Section headline -->
-        <h2>Real Impact: Meet Amina</h2>
-        <!-- Container for image and text -->
-        <div class="impact-content">
-            <!-- Impact image -->
-            <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Amina smiling with clean water" class="impact-image">
-            <!-- Impact story text -->
-            <p>
-                Amina used to walk miles every day to collect water for her family. Thanks to your support, her village now has a clean water well. Amina can go to school and her family is healthier and happier.
-            </p>
-        </div>
-    </section>
-
-    <!-- Call-to-Action Section: This encourages visitors to take action -->
-    <section class="call-to-action">
-        <h2>Make a Difference</h2>
-        <p>Your support can help save lives. Every donation brings us closer to a world with clean water for all.</p>
-        <a href="#" class="donate-button">Donate Now</a>
-    </section>
+  <footer class="footer" id="join">
+    <p>&copy; 2025 charity: water. All rights reserved.</p>
+  </footer>
+  
+  <!-- This script adds a pop animation to the button when clicked -->
+  <script>
+    // Get the button element
+    const ctaButton = document.querySelector('.cta-button');
+    // Add a click event listener
+    ctaButton.addEventListener('click', function() {
+      // Add the 'pop' class to start the animation
+      ctaButton.classList.add('pop');
+      // Remove the 'pop' class after the animation ends (0.3s)
+      setTimeout(function() {
+        ctaButton.classList.remove('pop');
+      }, 300);
+    });
+  </script>
 </body>
 </html>
